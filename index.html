@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>RPS-Multiplayer</title>
+</head>
+
+<body>
+    <div class="container contMain">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1>RPS-Multiplayer</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-8 text-center">
+                <div class="gameSquare">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h2>Player 1:</h2>
+                            <h2 class="noMargTop"><span id="p1"></span></h2>
+                        </div>
+                        <div class="col-xs-6">
+                            <h2>Player 2:</h2>
+                            <h2 class="noMargTop"><span id="p2"></span></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p class="scoreboardScore">Wins: <span class="p1wins">0</span></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="scoreboardScore">Wins: <span class="p2wins">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p class="scoreboardScore">Losses: <span class="p1losses">0</span></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="scoreboardScore">Losses: <span class="p2losses">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="square p1Spot" data-occupied="empty" data-player=1>
+                                <div class="vertCenter">
+                                    <h6>P1</h6>
+                                    <h6>Click to Join</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="square p2Spot" data-occupied="empty" data-player=2>
+                                <div class="vertCenter">
+                                    <h6>P2</h6>
+                                    <h6>Click to Join</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="gameEndText">Waiting for Players</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 buttonDrawer">
+                    <div class="col-xs-4 borderRight drawerSection">
+                        <!-- <img src="assets/images/" class="gameButtons" data-hand="Rock"> -->
+                    </div>
+                    <div class="col-xs-4 borderRight drawerSection">
+                        <!-- <img src="assets/images/" class="gameButtons" data-hand="Paper"> -->
+                    </div>
+                    <div class="col-xs-4 drawerSection">
+                        <!-- <img src="assets/images/" class="gameButtons" data-hand="Scissors"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 text-center text-center">
+				<div class="text-center">
+					<h3 class="chatHeader">Chat</h3>
+				</div>
+				<div class="textBox"></div>
+				<div class="row">
+					<form>
+						<div class="col-xs-8 noPadRight">
+							<input class="chatInput" type="text" name="">
+						</div>
+						<div class="col-xs-4 noPadLeft">
+							<input class="chatSubmit" type="submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contNameInput text-center">
+		<div class="nameInput">
+			<h1 class="greeting">RPS-Multiplayer</h1>
+			<h4 class="enterName">Please Enter Your Name</h4>
+			<form>
+				<input class="nameInputBox" type="input" name="playerName" maxlength="12" ><input class="nameSubmit" type="submit">
+			</form>
+		</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
