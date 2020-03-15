@@ -1,0 +1,267 @@
+body {
+	background-color:#087bda;;
+}
+
+h1 {
+	font-size: 52px;
+	margin: 21px;
+	color: white;
+	text-shadow: 6px 4px 8px black;
+}
+
+.greetingH1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 45px;
+	color: white;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 24px;
+	color: white;
+	margin: 20px 0 10px;
+    text-shadow: 6px 4px 8px black;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h2, h5, .scoreboardScore {
+	font-family: 'scoreboard';
+	color: white;
+}
+
+h1, h4, .chatHeader {
+	font-family: 'Lobster', cursive;
+}
+
+p {
+	word-wrap: break-word;
+	padding: 5px 15px;
+}
+
+.gameEndText, .noMargTop {
+	margin-top: 0;
+}
+
+.scoreboardScore {
+	font-size: 22px;
+}
+
+.chatHeader {
+	background-color: #032e55;
+	border: 1px solid black;
+	border-radius: 15px 15px 0 0;
+	color: white;
+}
+
+.p1text, .p2text {
+	color: black;
+}
+
+.nameInputBox, .nameSubmit, p, .chatInput, .chatSubmit {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.adminMessage {
+	background-color:#087bda;
+	color: white;
+}
+
+.textBox, .chatInput {
+	display: block;
+	margin: auto;
+}
+
+.textBox {
+	height: 375px;
+	border: 1px solid black;
+	text-align: left;
+	overflow: auto;
+	background-color: white;
+	color:#087bda;
+}
+
+input {
+	border: 1px solid black;
+}
+
+.nameInput {
+	padding: 25px;
+}
+
+.nameInputBox {
+	height: 50px;
+	border-radius: 10px 0 0 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.nameSubmit {
+	height: 50px;
+	border-radius: 0 10px 10px 0;
+}
+
+.chatSubmit, .nameSubmit {
+	border: 1px solid black;
+	background-color: #032e55;
+	color: white;
+}
+
+.chatInput, .chatSubmit {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 25px;
+}
+
+.chatInput {
+ 	border-radius: 0 0 0 15px;
+ 	padding-left: 15px;
+
+}
+
+.gameSquare {
+	background: #032e55;
+	border: 2px solid black;
+	border-radius: 15px;
+	height: 475px;
+}
+
+.square {
+	height: 150px;
+	border: 2px dashed white;
+	margin: 35px auto 0;
+	width: 150px;
+}
+
+.squareNoStyle {
+	border: none;
+	background: none;
+	color: white;
+}
+
+.contMain {
+	display: none;
+}
+
+hr {
+	margin-top: 29px;
+    border-top: 1px solid #eee;
+    width: 95%;
+}
+
+.chatSubmit {
+	border-radius: 0 0 15px 0;
+}
+
+.p1GameUI, #p1Score, .p1buttons, .p2GameUI, #p2Score, .p2buttons {
+	display: none;
+}
+
+.buttonDrawer {
+	background-color: #032e55;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	display: none;
+	border-radius: 0 0 15px 15px;
+}
+
+.borderRight {
+	border-right: 2px dotted #032e55;
+}
+
+.gameButtons {
+	height: 70px;
+	margin: 10px;
+}
+
+.selectIcon {
+	height: 100px;
+	margin: -25px 0 0 -10px;
+}
+
+.unknownChoice {
+	font-size: 150px;
+	margin-top: -50px;
+}
+
+.vertCenter {
+	margin-top: 45px;
+}
+
+.noPadRight {
+	padding-right: 0;
+}
+
+.noPadLeft {
+	padding-left: 0;
+}
+
+.gameSquare, .buttonDrawer, .chatHeader, .textBox, .chatSubmit, .chatInput{
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.51);
+}
+
+.nameSubmit, .nameInputBox  {
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.51);
+}
+
+@media screen and (max-width: 992px){
+	.chatHeader {
+		margin-top: 20px;
+	}
+
+	.textBox {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 625px){
+	h1, h2 {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.square {
+		width: 100px;
+		height: 100px;
+	}
+
+	.vertCenter {
+		margin-top: 15px;
+	}
+
+	h1, h2 {
+		font-size: 25px;
+	}
+
+	.gameSquare {
+		height: 375px;
+	}
+
+	.unknownChoice {
+		font-size: 130px;
+		margin-top: -36px;
+	}
+
+	.gameButtons {
+		height: 50px;
+		margin: 10px 0;
+	}
+
+	.selectIcon {
+		height: 70px;
+		margin: -3px 0 0 -10px;
+	}
+}
